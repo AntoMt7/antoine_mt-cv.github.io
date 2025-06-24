@@ -1,61 +1,120 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CV - Antoine Magnain-Thill</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <!-- ACCUEIL -->
-  <section id="home">
-    <h1>Antoine Magnain-Thill</h1>
-    <p>Consultant Décisionnel / BI</p>
-  </section>
+<html>
+  <head>
+    <title>Antoine Magnain-Thill</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <link rel="icon" type="image/x-icon" href="images/profile.ico" />
+  </head>
 
-  <!-- À PROPOS -->
-  <section id="about">
-    <h2>À propos</h2>
-    <p>Je suis un consultant décisionnel passionné, spécialisé en Business Intelligence. 
-      J’aime transformer les données en décisions à travers la datavisualisation avec Power BI, Tableau, Business Object..</p>
-  </section>
+  <body class="is-preload">
+    <div id="wrapper">
+      <!-- Navigation -->
+      <nav id="nav">
+        <a href="#" class="icon solid fa-user"><span>Moi</span></a>
+        <a href="#school" class="icon solid fa-user-graduate"><span>Formation</span></a>
+        <a href="#work" class="icon solid fa-briefcase"><span>Expériences</span></a>
+        <a href="#skills" class="icon solid fa-list"><span>Compétences</span></a>
+        <a href="https://www.linkedin.com/in/antoine-magnain-thill" target="_blank" class="icon brands fa-linkedin"><span>LinkedIn</span></a>
+        <a href="https://github.com/AntoMt7" target="_blank" class="icon brands fa-github"><span>GitHub</span></a>
+      </nav>
 
-  <!-- COMPÉTENCES -->
-  <section id="skills">
-    <h2>Compétences</h2>
-    <ul>
-      <li>Power BI, Tableau, BO, Streamlit </li>
-      <li>SQL, DAX, Python</li>
-      <li>ETL (PIPELINE SQL, Talend)</li>
-      <li>Modélisation de données</li>
-    </ul>
-  </section>
+      <!-- Contenu principal -->
+      <div id="main">
 
-  <!-- EXPÉRIENCES -->
-  <section id="experience">
-    <h2>Expériences</h2>
-    <h3>Consultant BI - Société XYZ</h3>
-    <p>2022 - Aujourd'hui</p>
-    <p>Développement de dashboards Power BI pour le pilotage commercial.</p>
+        <!-- Accueil -->
+        <article id="home" class="panel intro">
+          <header>
+            <h1>Antoine Magnain-Thill</h1>
+            <p>Consultant Décisionnel / BI 📊</p>
+          </header>
+          <a href="#school" class="pic">
+            <img src="images/me.png" alt="Photo Antoine" />
+          </a>
+        </article>
 
-    <h3>Analyste Données - Entreprise ABC</h3>
-    <p>2020 - 2022</p>
-    <p>Création d’indicateurs de performance pour le département finance.</p>
-  </section>
+        <!-- Formation -->
+        <article id="school" class="panel">
+          <header><h2>Formation</h2></header>
+          <section>
+            <h3>Master Systèmes d'information et Aides à la décision, option Business Intelligence - Université de Lille</h3>
+            <p>2023 - 2025</p>
 
-  <!-- FORMATION -->
-  <section id="education">
-    <h2>Formation</h2>
-    <p>Master Informatique Décisionnelle – Université Paris X – 2018</p>
-  </section>
+            <h3>Licence Economie Gestion, Parcours Commerce, Vente et Marketing – ESC Compiègne</h3>
+            <p>2022 - 2023</p>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email : <a href="mailto:antoine@example.com">antoine@example.com</a></p>
-    <p>LinkedIn : <a href="https://linkedin.com/in/antoine">linkedin.com/in/antoine</a></p>
-  </section>
+            <h3>BTS Management Commercial Opérationnel – Lycée Privé Sacré Coeur Amiens</h3>
+            <p>2020 - 2022</p>
 
-  <script src="script.js"></script>
-</body>
+            <h3>Licence Langues Etrangères Appliquées, Anglais - Espagnol - Italien – Université d'Amiens</h3>
+            <p>2019 - 2020</p>
+
+            <h3>Baccalauréat Scientifique, spécialité SVT – Lycée Cassini Clermont</h3>
+            <p>2016 - 2019</p>
+          </section>
+        </article>
+
+        <!-- Expériences -->
+        <article id="work" class="panel">
+          <header><h2>Expériences</h2></header>
+          <section>
+            <h3>Consultant Décisionnel – Synergy France</h3>
+            <p>Avril 2024 - Aujourd’hui</p>
+
+            <h4>Client : Kiloutou – Data Engineer / Data Analyst</h4>
+            <ul>
+              <li>Création et modification de procédures stockées dans Snowflake pour l’ingestion de données en qualification et production</li>
+              <li>Conception de vues Snowflake facilitant l’analyse et les extractions métiers</li>
+              <li>Développement de tableaux de bord sous Tableau Software sur des indicateurs clés métier</li>
+              <li>Reporting SAP Business Objects (cotisations, formations, handicap), incluant la modification d’univers</li>
+              <li>Ateliers réguliers avec les métiers pour le recueil des besoins et le suivi des solutions</li>
+            </ul>
+
+            <h4>Projet interne – Développement d’outils décisionnels</h4>
+            <ul>
+              <li>Développement d’un outil d'intégration sous Microsoft Fabric</li>
+              <ul>
+                <li>Conception de flux ETL via Data Factory</li>
+                <li>Mise en place de pipelines CI/CD (optimisation coûts, documentation)</li>
+                <li>Création de rapports Power BI interactifs</li>
+              </ul>
+              <li>Applications internes d’ingestion et automatisation des données :</li>
+              <ul>
+                <li>Procédures stockées Snowflake</li>
+                <li>Développement d’applications avec Streamlit, intégrées à Snowflake et GitHub</li>
+              </ul>
+            </ul>
+          </section>
+        </article>
+
+        <!-- Compétences -->
+        <article id="skills" class="panel">
+          <header><h2>Compétences</h2></header>
+          <ul>
+            <li><b>Outils BI :</b> Power BI, Tableau, SAP BO</li>
+            <li><b>Langages :</b> SQL, DAX, Python</li>
+            <li><b>ETL :</b> Data Factory, Data Pipeline, Talend (Formation)</li>
+            <li><b>Modélisation :</b> Snowflake, Schéma en étoile</li>
+            <li><b>Cloud :</b> Azure (notions), AWS (notions)</li>
+          </ul>
+
+          <header><h2>Langues</h2></header>
+          <ul>
+            <li><b>Français :</b> Langue maternelle</li>
+            <li><b>Anglais :</b> B2 (TOEIC 800)</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
